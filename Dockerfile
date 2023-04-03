@@ -1,6 +1,6 @@
 FROM nginx:latest
 LABEL ifeng fscarmen mack-a ygkkk
-EXPOSE 8080
+EXPOSE 80
 USER root
 COPY nginx.conf /etc/nginx/nginx.conf
 COPY config.yaml ./
