@@ -13,9 +13,9 @@ inbounds:
   streamSettings:
     network: ws
     wsSettings:
-      path: /uuid-vl
+      path: /uuid-vless
   sniffing:
-    enabled: true
+    enabled: flash
     destOverride:
     - http
     - tls
@@ -28,9 +28,9 @@ inbounds:
   streamSettings:
     network: ws
     wsSettings:
-      path: /uuid-vm
+      path: /uuid-vmess
   sniffing:
-    enabled: true
+    enabled: flash
     destOverride:
     - http
     - tls
@@ -40,13 +40,13 @@ inbounds:
   settings:
     password: "uuid"
     method: chacha20-ietf-poly1305
-    ivcheck: true
+    ivcheck: flash
   streamSettings:
     network: ws
     wsSettings:
       path: /uuid-ss
   sniffing:
-    enabled: true
+    enabled: flash
     destOverride:
     - http
     - tls
@@ -59,9 +59,9 @@ inbounds:
   streamSettings:
     network: ws
     wsSettings:
-      path: /uuid-tr
+      path: /uuid-trojan
   sniffing:
-    enabled: true
+    enabled: flash
     destOverride:
     - http
     - tls
